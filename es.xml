@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/5.4/language.xsd" languagecode="es" languagename="Español" countrycode="es">
+<import>
+	<category name="filebase.file">
+		<item name="filebase.file.button.jumpToSupportThread"><![CDATA[Tema de soporte]]></item>
+		<item name="filebase.file.supportThread.boardID"><![CDATA[Foro]]></item>
+		<item name="filebase.file.supportThread.boardID.description"><![CDATA[Los temas de soporte y discusión se crearán en foro seleccionado.]]></item>
+		<item name="filebase.file.supportThread.info"><![CDATA[{#$supportThread->replies} {if $supportThread->replies == 1}respuesta{else}respuestas{/if}{if $supportThread->replies > 0}, última: {time time=$supportThread->lastPostTime}{/if}]]></item>
+		<item name="filebase.file.supportThread.subject"><![CDATA[{@$fileContent->getSubject()}]]></item>
+		<item name="filebase.file.supportThread.message"><![CDATA[<p>{$file->username} ha añadido un nuevo archivo:<br>[file]{$file->fileID}[/file]</p>
+<woltlab-quote>{@$fileContent->getMessage()}</woltlab-quote>]]></item>
+		<item name="filebase.file.supportThread.versionMessage"><![CDATA[<p>{$version->getFile()->username} ha añadido una nueva versión:<br>[fileversion]{$version->versionID}[/fileversion]</p>
+<woltlab-quote>{@$versionContent->getDescription()}</woltlab-quote>]]></item>
+	</category>
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.category.filebase.supportThread"><![CDATA[Tema de soporte]]></item>
+		<item name="wcf.acp.option.category.filebase.supportThread.description"><![CDATA[Los temas de soporte y discusión se crean automáticamente para cada nuevo archivo en el foro seleccionado.]]></item>
+		<item name="wcf.acp.option.filebase_support_thread_board_id"><![CDATA[Foro]]></item>
+		<item name="wcf.acp.option.filebase_support_thread_board_id.description"><![CDATA[Los temas de soporte y discusión se crearán en foro seleccionado.]]></item>
+		<item name="wcf.acp.option.filebase_support_thread_categories"><![CDATA[Categorías]]></item>
+		<item name="wcf.acp.option.filebase_support_thread_categories.description"><![CDATA[Crear temas de soporte y discusión sólo para los archivos de las categorías seleccionadas.]]></item>
+		<item name="wcf.acp.option.filebase_support_thread_single_board"><![CDATA[Foro único para todas las categorías]]></item>
+		<item name="wcf.acp.option.filebase_support_thread_single_board.description"><![CDATA[Los temas de soporte y discusión se crearán en el foro especificado, independientemente de las categorías seleccionadas. Si desactivas esta función, podrás editar las categorías deseadas y asignarles un foro específico.]]></item>
+	</category>
+</import>
+<delete>
+	<item name="filebase.file.button.jumpToSupportTopic"/>
+	<item name="filebase.file.supportTopic.info"/>
+	<item name="wcf.acp.option.category.filebase.file.supportThread"/>
+	<item name="wcf.acp.option.category.filebase.file.supportThread.description"/>
+	<item name="wcf.acp.option.category.filebase.file.supportTopic"/>
+	<item name="wcf.acp.option.category.filebase.file.supportTopic.description"/>
+	<item name="wcf.acp.option.filebase_support_topic_board_id"/>
+	<item name="wcf.acp.option.filebase_support_topic_message"/>
+	<item name="wcf.acp.option.filebase_support_topic_subject"/>
+</delete>
+</language>
