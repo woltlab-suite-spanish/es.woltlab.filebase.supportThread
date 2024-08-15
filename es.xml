@@ -18,7 +18,7 @@
 		<item name="wcf.acp.option.filebase_support_thread_board_id"><![CDATA[Foro]]></item>
 		<item name="wcf.acp.option.filebase_support_thread_board_id.description"><![CDATA[Los temas de soporte y discusión se crearán en foro seleccionado.]]></item>
 		<item name="wcf.acp.option.filebase_support_thread_categories"><![CDATA[Categorías]]></item>
-		<item name="wcf.acp.option.filebase_support_thread_categories.description"><![CDATA[Crear temas de soporte y discusión sólo para los archivos de las categorías seleccionadas.]]></item>
+		<item name="wcf.acp.option.filebase_support_thread_categories.description"><![CDATA[Crear temas de soporte y discusión solo para los archivos de las categorías seleccionadas.]]></item>
 		<item name="wcf.acp.option.filebase_support_thread_single_board"><![CDATA[Foro único para todas las categorías]]></item>
 		<item name="wcf.acp.option.filebase_support_thread_single_board.description"><![CDATA[Los temas de soporte y discusión se crearán en el foro especificado, independientemente de las categorías seleccionadas. Si desactivas esta función, podrás editar las categorías deseadas y asignarles un foro específico.]]></item>
 	</category>
